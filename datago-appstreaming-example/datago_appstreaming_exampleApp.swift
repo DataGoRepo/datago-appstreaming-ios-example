@@ -7,11 +7,13 @@
 
 import SwiftUI
 
+
 @main
 struct datago_appstreaming_exampleApp: App {
+    var datagoTracker: DataGoSnowplowTracker = DataGoSnowplowTracker()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(datagoTracker: datagoTracker)
         }
     }
 }

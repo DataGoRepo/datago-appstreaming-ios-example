@@ -11,6 +11,14 @@
 		FAF2BCB22C8356D5008396C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2BCB12C8356D5008396C4 /* ContentView.swift */; };
 		FAF2BCB42C8356D8008396C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAF2BCB32C8356D8008396C4 /* Assets.xcassets */; };
 		FAF2BCB72C8356D8008396C4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAF2BCB62C8356D8008396C4 /* Preview Assets.xcassets */; };
+		FAF2BCC12C835747008396C4 /* CaseListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2BCC02C835747008396C4 /* CaseListItem.swift */; };
+		FAF2BCC32C835765008396C4 /* CaseDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2BCC22C835765008396C4 /* CaseDetails.swift */; };
+		FAF2BCC52C835777008396C4 /* CaseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2BCC42C835777008396C4 /* CaseList.swift */; };
+		FAF2BCC72C83578D008396C4 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2BCC62C83578D008396C4 /* Data.swift */; };
+		FAF2BCCA2C835932008396C4 /* SnowplowTracker in Frameworks */ = {isa = PBXBuildFile; productRef = FAF2BCC92C835932008396C4 /* SnowplowTracker */; };
+		FAF2BCCC2C835976008396C4 /* Snowplow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2BCCB2C835976008396C4 /* Snowplow.swift */; };
+		FAF2BCCE2C8364B4008396C4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2BCCD2C8364B4008396C4 /* Constants.swift */; };
+		FAF2BCD02C836C95008396C4 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2BCCF2C836C95008396C4 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,13 @@
 		FAF2BCB12C8356D5008396C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FAF2BCB32C8356D8008396C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAF2BCB62C8356D8008396C4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FAF2BCC02C835747008396C4 /* CaseListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseListItem.swift; sourceTree = "<group>"; };
+		FAF2BCC22C835765008396C4 /* CaseDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseDetails.swift; sourceTree = "<group>"; };
+		FAF2BCC42C835777008396C4 /* CaseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseList.swift; sourceTree = "<group>"; };
+		FAF2BCC62C83578D008396C4 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		FAF2BCCB2C835976008396C4 /* Snowplow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snowplow.swift; sourceTree = "<group>"; };
+		FAF2BCCD2C8364B4008396C4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FAF2BCCF2C836C95008396C4 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAF2BCCA2C835932008396C4 /* SnowplowTracker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +67,9 @@
 		FAF2BCAE2C8356D5008396C4 /* datago-appstreaming-example */ = {
 			isa = PBXGroup;
 			children = (
+				FAF2BCBD2C8356E5008396C4 /* Tracker */,
+				FAF2BCBE2C8356F4008396C4 /* Components */,
+				FAF2BCBF2C835703008396C4 /* Data */,
 				FAF2BCAF2C8356D5008396C4 /* datago_appstreaming_exampleApp.swift */,
 				FAF2BCB12C8356D5008396C4 /* ContentView.swift */,
 				FAF2BCB32C8356D8008396C4 /* Assets.xcassets */,
@@ -65,6 +84,34 @@
 				FAF2BCB62C8356D8008396C4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FAF2BCBD2C8356E5008396C4 /* Tracker */ = {
+			isa = PBXGroup;
+			children = (
+				FAF2BCCB2C835976008396C4 /* Snowplow.swift */,
+				FAF2BCCD2C8364B4008396C4 /* Constants.swift */,
+				FAF2BCCF2C836C95008396C4 /* Utils.swift */,
+			);
+			path = Tracker;
+			sourceTree = "<group>";
+		};
+		FAF2BCBE2C8356F4008396C4 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FAF2BCC02C835747008396C4 /* CaseListItem.swift */,
+				FAF2BCC22C835765008396C4 /* CaseDetails.swift */,
+				FAF2BCC42C835777008396C4 /* CaseList.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		FAF2BCBF2C835703008396C4 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FAF2BCC62C83578D008396C4 /* Data.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +130,9 @@
 			dependencies = (
 			);
 			name = "datago-appstreaming-example";
+			packageProductDependencies = (
+				FAF2BCC92C835932008396C4 /* SnowplowTracker */,
+			);
 			productName = "datago-appstreaming-example";
 			productReference = FAF2BCAC2C8356D5008396C4 /* datago-appstreaming-example.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +161,9 @@
 				Base,
 			);
 			mainGroup = FAF2BCA32C8356D5008396C4;
+			packageReferences = (
+				FAF2BCC82C835932008396C4 /* XCRemoteSwiftPackageReference "snowplow-ios-tracker" */,
+			);
 			productRefGroup = FAF2BCAD2C8356D5008396C4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +190,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAF2BCC52C835777008396C4 /* CaseList.swift in Sources */,
+				FAF2BCC72C83578D008396C4 /* Data.swift in Sources */,
+				FAF2BCD02C836C95008396C4 /* Utils.swift in Sources */,
+				FAF2BCC12C835747008396C4 /* CaseListItem.swift in Sources */,
 				FAF2BCB22C8356D5008396C4 /* ContentView.swift in Sources */,
+				FAF2BCCC2C835976008396C4 /* Snowplow.swift in Sources */,
+				FAF2BCC32C835765008396C4 /* CaseDetails.swift in Sources */,
 				FAF2BCB02C8356D5008396C4 /* datago_appstreaming_exampleApp.swift in Sources */,
+				FAF2BCCE2C8364B4008396C4 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +404,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FAF2BCC82C835932008396C4 /* XCRemoteSwiftPackageReference "snowplow-ios-tracker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/snowplow/snowplow-ios-tracker";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FAF2BCC92C835932008396C4 /* SnowplowTracker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FAF2BCC82C835932008396C4 /* XCRemoteSwiftPackageReference "snowplow-ios-tracker" */;
+			productName = SnowplowTracker;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FAF2BCA42C8356D5008396C4 /* Project object */;
 }

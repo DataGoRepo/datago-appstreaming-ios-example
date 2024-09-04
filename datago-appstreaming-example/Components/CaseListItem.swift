@@ -6,13 +6,30 @@
 //
 
 import SwiftUI
+import SnowplowTracker
 
 struct CaseListItem: View {
+    var datagoTracker: DataGoSnowplowTracker
+    var theCase: Case
+    var eventData: EventData
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+
+            HStack(
+                alignment: .center,
+                spacing: 3
+            ) {
+                Text(theCase.name).font(.system(size: 12))
+                Spacer()
+//                Label("", systemImage: "chevron.right")
+//                  .foregroundColor(.blue)
+            }
+            .padding()
+            .onTapGesture {
+                print("")
+            }
     }
 }
 
 #Preview {
-    CaseListItem()
+    CaseListItem(datagoTracker: DataGoSnowplowTracker(), theCase: Case(id: 0, name: "Case Name", description: "", dataPath: ""), eventData: EventData(id: 0, data: SelfDescribing(schema: "", payload: [:])))
 }

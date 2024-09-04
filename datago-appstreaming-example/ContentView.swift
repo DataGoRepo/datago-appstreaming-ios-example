@@ -8,17 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    var datagoTracker: DataGoSnowplowTracker
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        CaseList(datagoTracker: datagoTracker)
     }
 }
 
 #Preview {
-    ContentView()
+    ContentView(datagoTracker: DataGoSnowplowTracker())
 }
